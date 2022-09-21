@@ -7,18 +7,16 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 public class SecondActivity extends AppCompatActivity {
-    TextView user = findViewById(R.id.textView2);
-    Intent intent = getIntent();
-    Bundle bundle = intent.getExtras();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
-        getSupportActionBar().setTitle("Second Activity");
+        TextView showUserText = findViewById(R.id.showUsername);
+        Intent receiveData = getIntent();
+        Bundle bundle = receiveData.getExtras();
 
-        if (bundle != null) {
-        user.setText(String.format("Haiii, %s", bundle.getString("Name")));
-        }
+        if (bundle != null)
+            showUserText.setText(String.format("Hai %s", bundle.getString("Name")));
     }
 }
