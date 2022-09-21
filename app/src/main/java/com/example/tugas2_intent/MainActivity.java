@@ -12,9 +12,6 @@ import android.widget.Toast;
 import java.util.Objects;
 
 public class MainActivity extends AppCompatActivity {
-//    EditText name = findViewById(R.id.id_name);
-//    Button intent = findViewById(R.id.btn_intent);
-//    private Intent SecondActivity;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,7 +21,6 @@ public class MainActivity extends AppCompatActivity {
 
         Button click = findViewById(R.id.btnClickMe);
         EditText editNameReceive = findViewById(R.id.editName);
-        String users = editNameReceive.getText().toString();
 
         click.setOnClickListener(view -> {
             if (editNameReceive.length() == 0)
@@ -32,20 +28,11 @@ public class MainActivity extends AppCompatActivity {
             else {
                 Toast.makeText(this, "Haiii...", Toast.LENGTH_LONG).show();
                 Intent intent = new Intent(this, SecondActivity.class);
+                String users = editNameReceive.getText().toString();
                 intent.putExtra("Name", users);
                 startActivity(intent);
             }
         });
-
-//        startActivity(new Intent(this, SecondActivity.class));
-//
-//        intent.setOnClickListener(view -> {
-//            if (name.length() == 0) {
-//            }else {
-//
-//                startActivity(SecondActivity);
-//            }
-//        });
     }
 
 }
