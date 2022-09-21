@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Tugas2_Intent</string>
+    <string name="button">Button</string>
+    <string name="todo">TODO</string>
+    <string name="supris_e">SUPRISE!!</string>
+    <string name="click_me">CLICK ME!</string>
+    <string name="i_want_to_give_you_something">I WANT TO GIVE YOU SOMETHING</string>
+    <string name="but_plis_fill_your_name_please_hehe">but..plis fill your name please hehe..</string>
+    <string name="your_name">Your Name</string>
+    <string name="CLICK_ME">CLICK ME</string>
+    <string name="textview">TextView</string>
+    <string name="name">Name</string>
+</resources>
