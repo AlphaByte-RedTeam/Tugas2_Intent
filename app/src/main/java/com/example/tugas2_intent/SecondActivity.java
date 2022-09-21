@@ -15,8 +15,9 @@ public class SecondActivity extends AppCompatActivity {
         TextView showUserText = findViewById(R.id.showUsername);
         Intent receiveData = getIntent();
         Bundle bundle = receiveData.getExtras();
+        String userName = bundle.getString("Name");
 
         if (bundle != null)
-            showUserText.setText(String.format("Hai %s", bundle.getString("Name")));
+            showUserText.setText(String.format("Hai %s", userName));
     }
 }
