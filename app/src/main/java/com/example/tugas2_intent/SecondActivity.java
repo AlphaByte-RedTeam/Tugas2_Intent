@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
 
+import java.util.Objects;
+
 public class SecondActivity extends AppCompatActivity {
 
     @Override
@@ -13,11 +15,14 @@ public class SecondActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
         TextView showUserText = findViewById(R.id.showUsername);
+        Objects.requireNonNull(getSupportActionBar()).setTitle("Second Activity");
+
         Intent receiveData = getIntent();
         Bundle bundle = receiveData.getExtras();
         String userName = bundle.getString("Name");
 
-        if (bundle != null)
-            showUserText.setText(String.format("Hai %s", userName));
+//        bundle != null ini sebenarnya g perlu, krn ini bkl selalu true
+//        if (bundle != null)
+            showUserText.setText(String.format("Haiii %s", userName));
     }
 }

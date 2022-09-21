@@ -11,4 +11,6 @@
     <string name="name">Name</string>
     <string name="showname">ShowName</string>
     <string name="textview">TextView</string>
+    <string name="suprise">SUPRISE!!</string>
+    <string name="TODO">TODO</string>
 </resources>
