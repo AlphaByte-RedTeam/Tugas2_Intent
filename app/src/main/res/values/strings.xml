@@ -8,6 +8,7 @@
     <string name="but_plis_fill_your_name_please_hehe">but..plis fill your name please hehe..</string>
     <string name="your_name">Your Name</string>
     <string name="CLICK_ME">CLICK ME</string>
-    <string name="textview">TextView</string>
     <string name="name">Name</string>
+    <string name="showname">ShowName</string>
+    <string name="textview">TextView</string>
 </resources>
