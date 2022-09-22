@@ -21,8 +21,6 @@ public class SecondActivity extends AppCompatActivity {
         Bundle bundle = receiveData.getExtras();
         String userName = bundle.getString("Name");
 
-//        bundle != null ini sebenarnya g perlu, krn ini bkl selalu true
-//        if (bundle != null)
             showUserText.setText(String.format("Haiii %s", userName));
     }
 }
